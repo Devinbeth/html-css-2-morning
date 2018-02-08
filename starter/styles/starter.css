@@ -85,8 +85,38 @@ body {
     width: 33%;
     height: 250px;
     background: lightblue;
+    flex: 1 1 250px;
 }
 
 .product:nth-child(even) {
     background: rebeccapurple;
+}
+
+.mobile_product_wrapper {
+    display: flex;
+    height: 250px;
+    margin-bottom: 48px;
+}
+
+.mobile_product_wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.product_container {
+    flex-grow: 1;
+    background: lightblue;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.product_container h3 {
+    font-size: 1.2rem;
+}
+
+.product_container h6 {
+    font-size: .8rem;
+}
+
+.product_container:nth-child(even) {
+    background: aqua;
+    flex: 2 2 23%;
 }
